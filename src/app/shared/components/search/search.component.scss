@@ -1,0 +1,40 @@
+@import "index";
+
+:host {
+  @include flexCenter(center);
+  padding: spacing(8px);
+  background-color: $color-white;
+  border-radius: 32px;
+  @include mediaQuery(sm) {
+    display: none;
+  }
+  input {
+    padding: spacing(12);
+    font-size: rem(16px);
+    border-radius: 32px;
+    min-width: 500px;
+    border: none;
+    outline: none;
+    color: $color-black;
+    &::placeholder {
+      color: $text-secondary;
+    }
+  }
+  button {
+    padding: spacing(12);
+    font-size: rem(16px);
+    border-radius: 32px;
+    background: transparent;
+    border: none;
+    color: $text-secondary;
+    cursor: pointer;
+    color: $color-black;
+    &:disabled {
+      color: $text-secondary;
+    }
+  }
+  
+}
+
+
+

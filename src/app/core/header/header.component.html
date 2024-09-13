@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="container">
+        <div class="header-content" *ngIf="(menus$ | async) as menus">
+           <div class="header-content-left">
+            <span class="brand">VH <span class="brand__accent">MOVIES</span></span>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <ng-container *ngFor="let menu of menus" >
+                        <li  class="item" appDropdown>
+                            <span>{{menu.title}}</span>
+                            <co-dropdown>
+                                <ul class="item-dropdown">
+                                    <li *ngFor="let submenu of menu.group"><span>{{submenu.subtitle}}</span></li>
+                                </ul>   
+                            </co-dropdown>
+                        </li>
+                    </ng-container>
+                </ul>
+            </nav>
+           </div>
+            <co-search (searched)="getValueSearched($event)"></co-search>
+        </div>
+
+    </div>
+</header>

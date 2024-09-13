@@ -1,0 +1,21 @@
+@import 'index';
+
+:host {
+    position: relative;
+    display: none;
+}
+
+:host-context(.active) {
+    display: initial;
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    background-color: $color-white;
+    list-style: none;
+    border: 2px solid $accent-color-secondary;
+    border-radius: 8px;
+    min-width: 130px;
+    padding: spacing(8);
+}
