@@ -1,0 +1,49 @@
+@mixin flexBetween($align) {
+ display: flex;
+ justify-content: space-between;
+ @if $align == center {
+    align-items: center;
+ } 
+ @else if $align == start {
+    align-items: flex-start;
+ }
+ @else if $align == end {
+    align-items: flex-end;
+ }
+}
+
+@mixin flexCenter($align) {
+   display: flex;
+   justify-content: center;
+   @if $align == center {
+      align-items: center;
+   } 
+   @else if $align == start {
+      align-items: flex-start;
+   }
+   @else if $align == end {
+      align-items: flex-end;
+   }
+}
+
+
+/* Media */
+
+@mixin mediaQuery($size) {
+   @if $size == lp {
+       @media screen and (max-width: 1024px) {
+           @content;
+       }
+   }
+   @else if $size == m {
+       @media screen and (max-width: 720px) {
+           @content;
+       }
+   }
+   @else if $size == sm {
+       @media screen and (max-width: 520px) {
+           @content;
+       }
+   }
+}
+  

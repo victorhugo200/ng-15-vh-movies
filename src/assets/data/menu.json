@@ -1,0 +1,30 @@
+{
+    "menus": [
+        {
+            "title": "Filmes",
+            "group": [
+                {
+                    "subtitle": "Populares",
+                    "route": ""
+                },
+                {
+                    "subtitle": "Em cartaz",
+                    "route": ""
+                }
+            ]
+        },
+        {
+            "title": "Séries",
+            "group": [
+                {
+                    "subtitle": "Populares",
+                    "route": ""
+                },
+                {
+                    "subtitle": "Em exibição hoje",
+                    "route": ""
+                }
+            ]
+        }
+    ]
+}
