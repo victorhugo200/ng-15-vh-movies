@@ -1,0 +1,20 @@
+@import 'index';
+:host {
+  display: block;
+  width: 100%;
+}
+
+
+.accordion {
+  padding:  spacing(24);
+  border: 1px solid $accent-color-secondary;
+  border-radius: 20px;
+  box-shadow: 0 0 12px $accent-color-secondary;
+  summary {
+      font-size: rem(18px);
+      cursor: pointer;
+  }
+  .content {
+      margin-top: spacing(32);
+  }
+}
