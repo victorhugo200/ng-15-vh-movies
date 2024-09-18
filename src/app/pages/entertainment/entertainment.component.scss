@@ -1,0 +1,12 @@
+@import 'index';
+
+.entertainment {
+    .title {
+        font-size: rem(24px);
+        margin-bottom: spacing(32);
+    }
+    &-content {
+        display: flex;
+        gap: spacing(16);
+    }
+}

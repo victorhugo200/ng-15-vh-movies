@@ -1,0 +1,14 @@
+@import 'index';
+footer {
+  margin-top: spacing(40);
+  padding: spacing(32) 0;
+  background-color: $color-black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  p {
+    text-align: center;
+    color: $color-white;
+  }
+}

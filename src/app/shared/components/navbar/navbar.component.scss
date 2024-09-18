@@ -1,0 +1,15 @@
+@import 'index';
+
+@mixin alignItems() {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(12);
+}
+:host {
+  width: 30%;
+  @include alignItems();
+  .filters {
+    width: 100%;
+    @include alignItems();
+  }
+}
