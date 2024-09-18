@@ -9,9 +9,5 @@ export const APP_ROUTES: Route[] = [
     {
         path: 'home',
         loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent)
-    },
-    {
-      path: 'entretenimento',
-      loadComponent: () => import('./pages/entertainment/entertainment.component').then((c) => c.EntertainmentComponent)
     }
 ];
